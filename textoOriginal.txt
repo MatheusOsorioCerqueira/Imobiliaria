@@ -1,0 +1,22 @@
+Imobiliária
+
+	Uma imobiliária trabalha com venda de imóveis. A imobiliária possui cadastros
+dos corretores (contendo: matricula, nome, endereço, telefone e comissão (% nas
+vendas)), dos clientes vendedores e compradores (contendo: CPF, nome, endereço,
+telefone, email e: características do imóvel procurado no caso de cliente comprador ou
+lista dos imóveis que estão vendendo no caso de vendedor) e cadastro dos imóveis
+disponíveis (contendo: código, dono (cliente vendedor), endereço, tipo (casa,
+apartamento ou loja), quantidade de quartos e valor de venda).
+	O sistema deve permitir agendar visitas aos imóveis determinando: lista de
+imóveis para visitar, corretores responsáveis, cliente e data da visita. Cada visita gera
+um gasto para a imobiliária calculado pela soma de um custo fixo para cada imóvel
+visitado. Esse valor fixo pode ser atualizado de tempos em tempos.
+Ao vender um imóvel, o sistema deve registrar que o imóvel foi vendido, o valor
+da venda (que não necessariamente é o mesmo valor cadastrado no imóvel) e os
+corretores que receberão comissão.
+	O sistema deve possuir a funcionalidade para gerenciar os cadastros (permitindo
+incluir, alterar e excluir itens), além de gerenciar as visitas (agendar, alterar e cancelar)
+e realizar a venda de imóveis.
+	O sistema deve apresentar relatórios mensais e anuais contendo: valor já
+arrecadado com vendas (10% de cada venda), gasto já ocorrido (com visitas e
+comissões) e gasto ainda para acontecer (visitas agendadas).

@@ -1,0 +1,39 @@
+Imobiliaria
+
+Trabalha com venda de imóveis (domínio)
+
+Classes:
+
+- A imobiliária possui cadastros dos corretores
+(matricula, nome, endereço, telefone, comissão(em %) dos clientes vendedores e compradores)
+
+- clientes comprador
+(CPF, nome, endereço, telefone, email, caracteristicas do imóvel procurado)
+
+- cliente vendedor
+(CPF, nome, endereço, telefone, email, lista de imoveis à venda)
+
+- imóvel
+(código, dono(cliente vendedor), endereço, tipo(casa, apartamento ou loja), quantidade de quartos e valor de venda)
+
+Obs: cliente comprador e vendedor claramente terá uma herança, o imóvel deve salvar um cliente vendedor, mas deve ser criado na classe controladora)
+
+
+Sistema:
+
+- Deve permitir agendar visitas aos imóveis
+- Na visita devem estar as informações: lista de imóveis para visitar, corretores esponsáveis, cliente e data de visita
+- Cada visita gera um gasto para a imbobiliaria calculado pela soma de um custo fixo para cada imóvel visitado. Esse valor fixo pode ser atualizado
+- Ao vender um imóvel, o sistema deve registrar que o imóvel foi vendido, o valor da venda (pode ser diferente do valor cadastrado) e os corretores que receberão commissão.
+- Deve possuir a funcionalidade para gerenciar os cadastros (incluir, exlcuir e alterar itens), além de gerenciar as visitas (agendar, alterar e cancelar)
+- Deve apresentar relatórios mensais e anuais contendo valor ja arrecadado com vendas (10% de cada venda), gasto já ocorrido (com visitas e comissões) e gasto ainda para acontecer visitas agendadas).
+
+
+Obs: Provavel classe visita: Deverá existir um boolean nela pra determina se ela já foi feita. O valor por visita não pode ser um static, porque as visitas terão valores diferentes com o passar do tempo). 
+
+Provavel classe venda
+
+relatorio pode ser uma função.
+
+ 
+
