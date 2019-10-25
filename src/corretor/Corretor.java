@@ -2,7 +2,7 @@ package corretor;
 
 import endereco.Endereco;
 
-public static class Corretor
+public class Corretor
 {
     private String matricula;
     private String nome;
