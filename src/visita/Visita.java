@@ -3,33 +3,34 @@ package visita;
 import corretor.Corretor;
 import imovel.Imovel;
 import cliente.ClienteComprador;
+import java.util.HashMap;
 
 public class Visita
 {
-    private HashMap<Int,Imovel> imoveis;
+    private HashMap<String,Imovel> imoveis;
     private HashMap<String,Corretor> corretores;
     private ClienteComprador cliente;
     private float custoVisita;
 
-    public Visita(float custoVisita)
-    {
+    public Visita(float custoVisita){
         this.corretores = new HashMap();
         this.imoveis = new HashMap();
     }
-	public ClienteComprador getCliente() {
-		return this.cliente;
-	}
+    
+    public ClienteComprador getCliente() {
+            return this.cliente;
+    }
 
-	public void setCliente(ClienteComprador cliente) {
-		this.cliente = cliente;
-	}
+    public void setCliente(ClienteComprador cliente) {
+            this.cliente = cliente;
+    }
 
-	public float getCustoVisita() {
-		return this.custoVisita;
-	}
+    public float getCustoVisita() {
+            return this.custoVisita;
+    }
 
-	public void setCustoVisita(float custoVisita) {
-		this.custoVisita = custoVisita;
+    public void setCustoVisita(float custoVisita) {
+            this.custoVisita = custoVisita;
     }
     
     public float custoTotalVisita()
@@ -41,7 +42,4 @@ public class Visita
         }
         return soma;
     }
-
-    
-
 }

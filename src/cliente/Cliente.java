@@ -1,6 +1,6 @@
 package cliente;
 
-import endereco.Endereco.*;
+import endereco.Endereco;
 
 public class Cliente
 {
